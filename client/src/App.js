@@ -1,8 +1,8 @@
 import Particles from "react-particles-js";
 import React, { useContext } from "react";
-import { ParticlesContext } from "./ParticlesContext";
+import { ParticlesContext } from "./components/ParticlesContext";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import SignInPage from "./SignInPage";
+import SignInPage from "./components/SignInPage";
 
 function App() {
   return (
