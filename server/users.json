@@ -1,8 +1,238 @@
 [
   {
-    "name": "River",
-    "gender": "male",
-    "sign": "virgo"
+    "name": {
+      "first": "Rosario",
+      "last": "Medina"
+    },
+    "gender": "female",
+    "interestedIn": "men",
+    "city": "Valencia",
+    "state": "Galicia",
+    "country": "Spain",
+
+    "email": "rosario.medina@example.com",
+    "password": "mama",
+
+    "dateOfBirth": "1979-10-04T01:09:33.522Z",
+    "age": 42,
+    "sign": "libra",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/95.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
+    }
   },
-  {}
+  /*divider1*/
+
+  {
+    "gender": "female",
+    "name": {
+      "first": "Sofie",
+      "last": "Bergem"
+    },
+    "interestedIn": "men",
+
+    "city": "Stamsund",
+    "state": "Trøndelag",
+    "country": "Norway",
+
+    "email": "sofie.bergem@example.com",
+
+    "password": "kajak",
+    "dateOfBirth": "1982-03-08T09:23:33.580Z",
+    "age": 39,
+    "sign": "pisces",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/60.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
+    }
+  },
+  /*divider2*/
+
+  {
+    "gender": "male",
+    "name": {
+      "first": "Jacob",
+      "last": "Pedersen"
+    },
+    "interestedIn": "women",
+
+    "city": "Brondby",
+    "state": "Syddanmark",
+    "country": "Denmark",
+
+    "email": "jacob.pedersen@example.com",
+    "password": "swordfish",
+
+    "dateOfBirth": "1969-02-10T20:42:46.515Z",
+    "age": 52,
+    "sign": "aquarius",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/11.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/11.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/11.jpg"
+    }
+  },
+
+  /*divider3*/
+  {
+    "gender": "female",
+    "name": {
+      "first": "Laura",
+      "last": "Robinson"
+    },
+    "interestedIn": "men",
+
+    "city": "Kilcock",
+    "state": "Leitrim",
+    "country": "Ireland",
+
+    "email": "laura.robinson@example.com",
+
+    "username": "orangefish384",
+    "password": "close",
+    "dateOfBirth": "1981-06-17T14:09:37.258Z",
+    "age": 40,
+    "sign": "gemini",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/93.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/93.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/93.jpg"
+    }
+  },
+  /*divider4*/
+  {
+    "gender": "male",
+    "name": {
+      "first": "Ümit",
+      "last": "Uluhan"
+    },
+    "interestedIn": "women",
+
+    "city": "Trabzon",
+    "state": "Bolu",
+    "country": "Turkey",
+
+    "email": "umit.uluhan@example.com",
+    "password": "8inches",
+
+    "dateOfBirth": "1993-07-06T06:55:52.479Z",
+    "age": 28,
+    "sign": "cancer",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/95.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/95.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/95.jpg"
+    }
+  },
+  /*divider5*/
+
+  {
+    "gender": "male",
+    "name": {
+      "first": "Eeli",
+      "last": "Hamalainen"
+    },
+    "interestedIn": "women",
+
+    "city": "Loimaa",
+    "state": "Southern Savonia",
+    "country": "Finland",
+
+    "email": "eeli.hamalainen@example.com",
+    "password": "starr",
+
+    "dateOfBirth": "1983-11-20T21:15:28.765Z",
+    "age": 38,
+    "sign": "scorpio",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/24.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
+    }
+  },
+  /*divider5*/ {
+    "gender": "female",
+    "name": {
+      "first": "Isla",
+      "last": "Laurila"
+    },
+    "interestedIn": "men",
+
+    "city": "Oripää",
+    "state": "Southern Ostrobothnia",
+    "country": "Finland",
+
+    "email": "isla.laurila@example.com",
+    "password": "butterfly",
+
+    "dateOfBirth": "1959-04-28T13:06:29.415Z",
+    "age": 62,
+    "sign": "taurus",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/7.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+    }
+  },
+
+  /*divider6*/
+  {
+    "gender": "female",
+    "name": {
+      "first": "Elisa",
+      "last": "Fernandez"
+    },
+    "interestedIn": "women",
+    "city": "Móstoles",
+    "state": "Castilla la Mancha",
+    "country": "Spain",
+
+    "email": "elisa.fernandez@example.com",
+    "password": "pass1",
+
+    "dateOfBirth": "1967-06-21T02:42:07.687Z",
+    "age": 54,
+    "sign": "cancer",
+
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/50.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/50.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/50.jpg"
+    }
+  },
+  /*divider7*/
+  {
+    "gender": "female",
+    "name": {
+      "first": "Gail",
+      "last": "Dunn"
+    },
+    "interestedIn": "men",
+
+    "city": "Lafayette",
+    "state": "Michigan",
+    "country": "United States",
+
+    "email": "gail.dunn@example.com",
+
+    "password": "tommy",
+
+    "date": "1966-12-22T08:38:33.858Z",
+    "age": 55,
+    "sign": "capricorn",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/58.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/58.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/58.jpg"
+    }
+  }
 ]

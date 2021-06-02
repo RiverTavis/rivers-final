@@ -6,18 +6,18 @@ const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 };
-const users = JSON.parse(fs.readFileSync("users.json"));
-const batchImport = async () => {
+const signs = JSON.parse(fs.readFileSync("signs.json"));
+const SignImport = async () => {
   const client = await MongoClient(MONGO_URI, options);
   await client.connect();
   const db = client.db("rivers-final");
-  const result = await db.collection("app-users").insertMany(users);
+  const result = await db.collection("signs").insertMany(signs);
   //   assert.equal(134, result.insertedCount);
   console.log(result);
 
   client.close();
 };
 
-// node ImportSigns.js in terminal to add
+// node ImportUsers.js in terminal to add
 
-batchImport();
+SignImport();
