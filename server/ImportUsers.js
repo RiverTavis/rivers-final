@@ -13,7 +13,6 @@ const batchImport = async () => {
   const db = client.db("rivers-final");
   const result = await db.collection("app-users").insertMany(users);
   //   assert.equal(134, result.insertedCount);
-  console.log(result);
 
   client.close();
 };

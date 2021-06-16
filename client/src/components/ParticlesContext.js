@@ -1,5 +1,4 @@
 import React, { createContext } from "react";
-import Particles from "react-particles-js";
 export const ParticlesContext = createContext();
 
 export const ParticlesProvider = ({ children }) => {
@@ -8,70 +7,82 @@ export const ParticlesProvider = ({ children }) => {
     top: 0,
     left: 0,
     width: "100%",
-    height: "100%",
+    height: "10vh",
+    zIndex: "1",
+    // ???
   };
   const params = {
+    fpsLimit: 60,
+    backgroundMode: {
+      enable: true,
+      zIndex: 0,
+    },
     particles: {
       number: {
-        value: 150,
+        value: 80,
         density: {
           enable: true,
-          value_area: 1803.4120608655228,
+          area: 800,
         },
       },
       color: {
-        value: "#ffffff",
+        value: "#ff0000",
+        animation: {
+          enable: true,
+          speed: 20,
+          sync: true,
+        },
       },
       shape: {
         type: "circle",
-        stroke: {
-          width: 2,
-          color: "#000000",
-        },
-        polygon: {
-          nb_sides: 4,
-        },
-        image: {
-          src: "img/github.svg",
-          width: 100,
-          height: 100,
+        options: {
+          polygon: {
+            sides: 5,
+          },
+          image: {
+            src: "https://cdn.matteobruni.it/images/particles/github.svg",
+            width: 100,
+            height: 100,
+          },
         },
       },
+      stroke: {
+        width: 0,
+      },
       opacity: {
-        value: 0.4008530152163807,
+        value: 0.5,
         random: false,
-        anim: {
+        animation: {
           enable: false,
-          speed: 1,
-          opacity_min: 0.1,
+          speed: 3,
+          minimumValue: 0.1,
           sync: false,
         },
       },
       size: {
-        value: 1.5,
+        value: 3,
         random: true,
-        anim: {
+        animation: {
           enable: false,
-          speed: 40,
-          size_min: 0.1,
+          speed: 20,
+          minimumValue: 0.1,
           sync: false,
         },
       },
-      line_linked: {
+      links: {
         enable: true,
-        distance: 0,
+        distance: 100,
         color: "#ffffff",
-        opacity: 0.3687847739990702,
-        width: 0.6413648243462091,
+        opacity: 0.4,
+        width: 1,
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 1,
         direction: "none",
         random: false,
         straight: false,
-        out_mode: "out",
-        bounce: false,
+        outMode: "out",
         attract: {
           enable: false,
           rotateX: 600,
@@ -80,22 +91,22 @@ export const ParticlesProvider = ({ children }) => {
       },
     },
     interactivity: {
-      detect_on: "window",
+      detectsOn: "canvas",
       events: {
-        onhover: {
+        onHover: {
           enable: true,
           mode: "repulse",
         },
-        onclick: {
-          enable: false,
-          mode: "bubble",
+        onClick: {
+          enable: true,
+          mode: "push",
         },
         resize: true,
       },
       modes: {
         grab: {
           distance: 400,
-          line_linked: {
+          links: {
             opacity: 1,
           },
         },
@@ -103,22 +114,27 @@ export const ParticlesProvider = ({ children }) => {
           distance: 400,
           size: 40,
           duration: 2,
-          opacity: 8,
-          speed: 3,
+          opacity: 0.8,
         },
         repulse: {
-          distance: 100,
-          duration: 0.4,
+          distance: 200,
         },
         push: {
-          particles_nb: 4,
+          quantity: 4,
         },
         remove: {
-          particles_nb: 2,
+          quantity: 2,
         },
       },
     },
-    retina_detect: true,
+    detectRetina: true,
+    background: {
+      color: "#000000",
+      image: "",
+      position: "50% 50%",
+      repeat: "no-repeat",
+      size: "cover",
+    },
   };
 
   return (

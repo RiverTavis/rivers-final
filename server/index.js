@@ -3,7 +3,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const { getUsers } = require("./handlers");
+const {
+  getUsers,
+  getSigns,
+  getUserById,
+  addUser,
+  updateUserLikes,
+  updateUserMatches,
+  deleteUser,
+} = require("./handlers");
 const PORT = process.env.PORT || 8000;
 
 express()
@@ -15,5 +23,17 @@ express()
 
   // endpoints
   .get("/users", getUsers)
+
+  .get("/signs", getSigns)
+
+  .get("/users/:id", getUserById)
+
+  .post("/users/new", addUser)
+
+  .patch("/user/likes/:id", updateUserLikes)
+
+  .patch("/user/matches/:id", updateUserMatches)
+
+  .delete("/users/edit/remove/:id", deleteUser)
 
   .listen(PORT, () => console.log(`Listening on port ${PORT}`));

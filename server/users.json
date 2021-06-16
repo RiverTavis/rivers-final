@@ -1,5 +1,44 @@
 [
   {
+    "gender": "male",
+    "name": {
+      "first": "Clifford",
+      "last": "Ortiz"
+    },
+    "city": "Warragul",
+    "state": "Northern Territory",
+    "country": "Australia",
+    "interestedIn": "women",
+    "email": "clifford.ortiz@example.com",
+    "password": "kathy1",
+    "likedBy": [],
+    "likes": [],
+    "recievedMessages": [
+      {
+        "sentByAvatar": "https://randomuser.me/api/portraits/med/women/58.jpg",
+        "sentById": "60c102986f6bd5f5a61fa00d",
+        "sentByName": "Gail",
+        "time": "2:15pm",
+        "message": "i love leos :heart_eyes:"
+      },
+      {
+        "sentByAvatar": "https://randomuser.me/api/portraits/med/women/93.jpg",
+        "sentBy": "60c102986f6bd5f5a61fa008",
+        "sentByName": "Laura",
+        "time": "2:17pm",
+        "message": "hellooooo handsome :P"
+      }
+    ],
+    "dateOfBirth": "1975-08-10T14:54:16.382Z",
+    "age": 46,
+    "sign": "leo",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/34.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/34.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/34.jpg"
+    }
+  },
+  {
     "name": {
       "first": "Rosario",
       "last": "Medina"
@@ -9,21 +48,20 @@
     "city": "Valencia",
     "state": "Galicia",
     "country": "Spain",
-
     "email": "rosario.medina@example.com",
     "password": "mama",
-
+    "likedBy": [],
+    "likes": ["umit.uluhan@example.com"],
+    "recievedMessages": [],
     "dateOfBirth": "1979-10-04T01:09:33.522Z",
     "age": 42,
     "sign": "libra",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/women/95.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
     }
   },
-  /*divider1*/
 
   {
     "gender": "female",
@@ -32,25 +70,23 @@
       "last": "Bergem"
     },
     "interestedIn": "men",
-
     "city": "Stamsund",
     "state": "Trøndelag",
     "country": "Norway",
-
     "email": "sofie.bergem@example.com",
-
     "password": "kajak",
+    "likedBy": [],
+    "likes": ["umit.uluhan@example.com"],
+    "recievedMessages": [],
     "dateOfBirth": "1982-03-08T09:23:33.580Z",
     "age": 39,
     "sign": "pisces",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/women/60.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
     }
   },
-  /*divider2*/
 
   {
     "gender": "male",
@@ -59,18 +95,17 @@
       "last": "Pedersen"
     },
     "interestedIn": "women",
-
     "city": "Brondby",
     "state": "Syddanmark",
     "country": "Denmark",
-
     "email": "jacob.pedersen@example.com",
     "password": "swordfish",
-
+    "likedBy": ["sofie.bergem@example.com", "laura.robinson@example.com"],
+    "likes": [],
+    "recievedMessages": [],
     "dateOfBirth": "1969-02-10T20:42:46.515Z",
     "age": 52,
     "sign": "aquarius",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/men/11.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/11.jpg",
@@ -78,7 +113,6 @@
     }
   },
 
-  /*divider3*/
   {
     "gender": "female",
     "name": {
@@ -86,26 +120,24 @@
       "last": "Robinson"
     },
     "interestedIn": "men",
-
     "city": "Kilcock",
     "state": "Leitrim",
     "country": "Ireland",
-
     "email": "laura.robinson@example.com",
-
     "username": "orangefish384",
     "password": "close",
+    "likedBy": [],
+    "likes": ["clifford.ortiz@example.com", "umit.uluhan@example.com"],
+    "recievedMessages": [],
     "dateOfBirth": "1981-06-17T14:09:37.258Z",
     "age": 40,
     "sign": "gemini",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/women/93.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/93.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/93.jpg"
     }
   },
-  /*divider4*/
   {
     "gender": "male",
     "name": {
@@ -113,25 +145,23 @@
       "last": "Uluhan"
     },
     "interestedIn": "women",
-
     "city": "Trabzon",
     "state": "Bolu",
     "country": "Turkey",
-
     "email": "umit.uluhan@example.com",
     "password": "8inches",
-
+    "likedBy": [],
+    "likes": [],
+    "recievedMessages": [],
     "dateOfBirth": "1993-07-06T06:55:52.479Z",
     "age": 28,
     "sign": "cancer",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/men/95.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/95.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/95.jpg"
     }
   },
-  /*divider5*/
 
   {
     "gender": "male",
@@ -140,43 +170,41 @@
       "last": "Hamalainen"
     },
     "interestedIn": "women",
-
     "city": "Loimaa",
     "state": "Southern Savonia",
     "country": "Finland",
-
     "email": "eeli.hamalainen@example.com",
     "password": "starr",
-
+    "likedBy": ["sofie.bergem@example.com", "laura.robinson@example.com"],
+    "likes": ["clifford.ortiz@example.com"],
+    "recievedMessages": [],
     "dateOfBirth": "1983-11-20T21:15:28.765Z",
     "age": 38,
     "sign": "scorpio",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/men/24.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
     }
   },
-  /*divider5*/ {
+  {
     "gender": "female",
     "name": {
       "first": "Isla",
       "last": "Laurila"
     },
     "interestedIn": "men",
-
     "city": "Oripää",
     "state": "Southern Ostrobothnia",
     "country": "Finland",
-
     "email": "isla.laurila@example.com",
     "password": "butterfly",
-
+    "likedBy": ["sofie.bergem@example.com", "laura.robinson@example.com"],
+    "likes": ["clifford.ortiz@example.com"],
+    "recievedMessages": [],
     "dateOfBirth": "1959-04-28T13:06:29.415Z",
     "age": 62,
     "sign": "taurus",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/women/7.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
@@ -184,7 +212,6 @@
     }
   },
 
-  /*divider6*/
   {
     "gender": "female",
     "name": {
@@ -195,21 +222,20 @@
     "city": "Móstoles",
     "state": "Castilla la Mancha",
     "country": "Spain",
-
     "email": "elisa.fernandez@example.com",
     "password": "pass1",
-
+    "likedBy": ["sofie.bergem@example.com", "gail.dunn@example.com"],
+    "likes": [],
+    "recievedMessages": [],
     "dateOfBirth": "1967-06-21T02:42:07.687Z",
     "age": 54,
     "sign": "cancer",
-
     "picture": {
       "large": "https://randomuser.me/api/portraits/women/50.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/50.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/50.jpg"
     }
   },
-  /*divider7*/
   {
     "gender": "female",
     "name": {
@@ -217,15 +243,29 @@
       "last": "Dunn"
     },
     "interestedIn": "men",
-
     "city": "Lafayette",
     "state": "Michigan",
     "country": "United States",
-
     "email": "gail.dunn@example.com",
-
     "password": "tommy",
-
+    "likedBy": ["eeli.hamalainen@example.com", "clifford.ortiz@example.com"],
+    "likes": ["eeli.hamalainen@example.com", "clifford.ortiz@example.com"],
+    "recievedMessages": [
+      {
+        "sentByAvatar": "https://randomuser.me/api/portraits/med/men/24.jpg",
+        "sentBy": "60c102986f6bd5f5a61fa007",
+        "sentByName": "eeli",
+        "time": "2:15pm",
+        "message": "capricorn queen!!! :heart_eyes"
+      },
+      {
+        "sentByAvatar": "https://randomuser.me/api/portraits/med/men/24.jpg",
+        "sentBy": "60c102986f6bd5f5a61fa00a",
+        "sentByName": "eeli",
+        "time": "3:07am",
+        "message": "wyd :P"
+      }
+    ],
     "date": "1966-12-22T08:38:33.858Z",
     "age": 55,
     "sign": "capricorn",
