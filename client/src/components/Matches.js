@@ -10,7 +10,6 @@ const Matches = ({ users, currentUser }) => {
     currentUser.matches.includes(user.email)
   );
 
-  // in here - call currerntUser.matches and map through that to show my
   console.log(currentUser.matches.length);
   console.log(currentUser.matches);
 
@@ -28,7 +27,7 @@ const Matches = ({ users, currentUser }) => {
                         <StyledImg src={user.picture.thumbnail} />
                         <TextDiv>
                           <div>{user.name.first + " "} </div>
-                          <StyledNavLink exact to={`/chat/user/${user._id}`}>
+                          <StyledNavLink exact to={`/connect/user/${user._id}`}>
                             click to view profile{" "}
                           </StyledNavLink>
                         </TextDiv>
@@ -53,6 +52,8 @@ const Matches = ({ users, currentUser }) => {
 
 const StyledNavLink = styled(NavLink)`
   color: plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   text-decoration: none;
   &:active {
     color: inherit;

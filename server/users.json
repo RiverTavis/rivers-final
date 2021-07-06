@@ -13,20 +13,36 @@
     "password": "kathy1",
     "likedBy": [],
     "likes": [],
-    "recievedMessages": [
+    "messageThreads": [
       {
-        "sentByAvatar": "https://randomuser.me/api/portraits/med/women/58.jpg",
-        "sentById": "60c102986f6bd5f5a61fa00d",
-        "sentByName": "Gail",
-        "time": "2:15pm",
-        "message": "i love leos :heart_eyes:"
+        "connectionWithId": "60c102986f6bd5f5a61fa00d",
+        "messageHistory": [
+          {
+            "sentByName": "Example person",
+            "timestamp": "2017-01-20",
+            "message": "i love u so much..."
+          },
+          {
+            "sentByName": "Me",
+            "timestamp": "2017-01-20",
+            "message": "i love u too..."
+          }
+        ]
       },
       {
-        "sentByAvatar": "https://randomuser.me/api/portraits/med/women/93.jpg",
-        "sentBy": "60c102986f6bd5f5a61fa008",
-        "sentByName": "Laura",
-        "time": "2:17pm",
-        "message": "hellooooo handsome :P"
+        "connectionWithId": "12345678910",
+        "messageHistory": [
+          {
+            "sentByName": "Example person",
+            "timestamp": "2017-01-20",
+            "message": "i love u so much..."
+          },
+          {
+            "sentByName": "Me",
+            "timestamp": "2017-01-20",
+            "message": "i love u too..."
+          }
+        ]
       }
     ],
     "dateOfBirth": "1975-08-10T14:54:16.382Z",

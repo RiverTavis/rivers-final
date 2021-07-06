@@ -16,16 +16,6 @@ function SignInPage({
 }) {
   const { params, style } = useContext(ParticlesContext);
 
-  // const {
-  //   emailValue,
-  //   setEmailValue,
-  //   passwordValue,
-  //   setPasswordValue,
-  //   users,
-  //   setUsers,
-  //   currentUser,
-  //   setCurrentUser,
-  // } = useContext(UserContext);
   const history = useHistory();
 
   /////revisit
@@ -121,8 +111,14 @@ const InnerTipsy = styled.div`
 `;
 const Input = styled.input`
   padding: 5px 2px;
+  width: 220px;
+  margin: 5px;
+  border-radius: 15px;
+  border: none;
   :focus {
     border: solid plum 5px;
+
+    border-radius: 15px;
   }
 `;
 const StyledButton = styled.button`
@@ -135,17 +131,23 @@ const StyledButton = styled.button`
   border: none;
   background-color: white;
   color: plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 
   box-shadow: 10px 10px 10px -10px;
 
   :hover {
     color: white;
     background-color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
     border: none;
   }
 `;
 const SteezyMfBox = styled.div`
   background-color: plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   width: 60px;
   height: 6px;
   /* border-bottom-left-radius: 70%; */

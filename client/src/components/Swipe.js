@@ -118,6 +118,8 @@ const TinderWrapper = styled.div`
 `;
 const Text = styled.div`
   background-color: plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   padding: 10px;
   border-radius: 15px; ;
 `;

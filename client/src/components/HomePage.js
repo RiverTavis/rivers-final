@@ -16,13 +16,14 @@ const HomePage = ({}) => {
           <AstroImg src={astroImage} />
         </ImageWrap>
         <BlurbWrap>
-          Tired of useless dating apps and matching with people that you have
-          absolutely no common interests or chemistry with? Sick of going on a
-          first date with someone only to find out they're an insufferable
-          Aries? Not Anymore! Eclipse offers you an elevated online dating
+          <p>
+            Tired of useless dating apps and matching with people that you have
+            absolutely no common interests or chemistry with?
+          </p>{" "}
+          <p>Not Anymore!</p> Eclipse offers you an elevated online dating
           experience where your unique astrological chemistry is provided on
-          each users profile. Your days of dating incompatable signs are OVER
-          with Eclipse. Sign up now for free!
+          each users profile.{" "}
+          <p>Your days of dating incompatable signs are OVER with Eclipse.</p>
         </BlurbWrap>
         <StyledNavLink exact to="/signup">
           <StyledH1>Sign up now!</StyledH1>
@@ -41,8 +42,8 @@ const BodyWrap = styled.div`
 `;
 
 const BlurbWrap = styled.div`
-  max-width: 600px;
-  padding: 60px;
+  max-width: 700px;
+  padding: 10px;
   background-image: url("astroImg");
   font-size: 20px;
   background: navy;

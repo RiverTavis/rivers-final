@@ -94,6 +94,10 @@ const NavDiv = styled.div`
   /* margin: 10px; */
   &:hover {
     color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 const StyledBtn = styled.button`
@@ -106,6 +110,11 @@ const StyledBtn = styled.button`
   font-size: 16px;
   &:hover {
     color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 
@@ -122,8 +131,12 @@ const LinkLogo = styled.div`
   margin: 10px;
 
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   &:hover {
     color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 const SignInDiv = styled.div`
@@ -138,10 +151,14 @@ const SignOutDiv = styled.div`
 `;
 const StyledDiv = styled.div`
   color: white;
-  margin: 10px;
+  margin: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 
   &:hover {
     color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 const StyledNavLink = styled(NavLink)`
@@ -149,6 +166,8 @@ const StyledNavLink = styled(NavLink)`
   color: white;
   &:hover {
     color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 export default Header;

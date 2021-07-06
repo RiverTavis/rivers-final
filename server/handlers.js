@@ -161,6 +161,48 @@ const deleteUser = async (req, res) => {
   client.close();
 };
 
+const updateMessageThreads = async (req, res) => {
+  // all info from new message
+  const messageData = req.body;
+  const myId = req.body.myId;
+  const connectionWithId = req.body.connectionWithId;
+  const newMessage = req.body.newMessage;
+
+  const client = await MongoClient(MONGO_URI, options);
+  await client.connect();
+  const db = client.db("rivers-final");
+  // for updating the current users message
+  // laura id aka current user:
+  // 60c270569c72281411dec8fc
+  await db
+    .collection("app-users")
+    .findOneAndUpdate(
+      { _id: ObjectId(myId) },
+      { $push: { messageThreads: newMessage } }
+    );
+  // for updating my matched users messages
+  // eli id aka my match:
+  // 60c270569c72281411dec8fe
+  await db
+    .collection("app-users")
+    .findOneAndUpdate(
+      { _id: ObjectId(connectionWithId) },
+      { $push: { messageThreads: newMessage } }
+    );
+  // for getting the most up to date message thread for the current user
+  const myUpdatedMessages = await db
+    .collection("app-users")
+    .findOne({ _id: ObjectId(myId) });
+  if (myUpdatedMessages) {
+    res
+      .status(200)
+      .json({ message: "current users updated msgs", data: myUpdatedMessages });
+  } else {
+    res.status(404).json({ message: "User msgs not found" });
+  }
+  client.close();
+};
+
 module.exports = {
   getUsers,
   getSigns,
@@ -169,4 +211,5 @@ module.exports = {
   updateUserLikes,
   updateUserMatches,
   deleteUser,
+  updateMessageThreads,
 };

@@ -11,6 +11,7 @@ const {
   updateUserLikes,
   updateUserMatches,
   deleteUser,
+  updateMessageThreads,
 } = require("./handlers");
 const PORT = process.env.PORT || 8000;
 
@@ -35,5 +36,7 @@ express()
   .patch("/user/matches/:id", updateUserMatches)
 
   .delete("/users/edit/remove/:id", deleteUser)
+
+  .patch("/users/messages/update", updateMessageThreads)
 
   .listen(PORT, () => console.log(`Listening on port ${PORT}`));

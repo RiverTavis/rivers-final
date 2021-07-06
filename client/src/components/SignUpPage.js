@@ -276,6 +276,8 @@ const Wrapper = styled.div`
   max-width: 700px;
   width: 700px;
   border-style: 1px solid plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   background-color: navy;
   color: white;
   position: relative;
@@ -334,16 +336,17 @@ const StyledInput = styled.input`
   border: none;
   width: 150px;
   margin: 5px;
+  border-radius: 15px; ;
 `;
 
 const StyledButton = styled.button`
   padding: 10px 4px;
   border: none;
-
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-self: center;
-
+  font-weight: bold;
   width: 178px;
 
   font-family: var(--heading-font-family);
@@ -352,12 +355,21 @@ const StyledButton = styled.button`
   border: none;
   background-color: white;
   color: plum;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 
   box-shadow: 10px 10px 10px -10px;
   font-weight: bold;
   :hover {
     color: white;
     background-color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    border: none;
+    border-radius: 15px;
+  }
+  &:active {
+    border-radius: 15px;
     border: none;
   }
 `;
@@ -367,6 +379,7 @@ const StyledSelect = styled.select`
   margin-left: 24px;
   padding: 5px;
   height: 30px;
+  border-radius: 15px; ;
 `;
 
 export default SignUpPage;

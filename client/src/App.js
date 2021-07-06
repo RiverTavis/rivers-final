@@ -11,6 +11,8 @@ import ChatPage from "./components/ChatPage";
 import GlobalStyles from "./GlobalStyles.js";
 import Footer from "./components/Footer";
 
+///
+
 const App = () => {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
@@ -36,7 +38,6 @@ const App = () => {
     sign: "",
   };
   const [formData, setFormData] = useState(initialState);
-  // const [msgs, setMsgs] = useState([]);
 
   useEffect(() => {
     fetch("/users").then((response) =>
@@ -44,7 +45,7 @@ const App = () => {
         setUsers(json);
       })
     );
-  }, []);
+  }, [currentUser]);
 
   useEffect(() => {
     fetch("/signs").then((response) =>
@@ -99,10 +100,16 @@ const App = () => {
               setMatches={setMatches}
               users={users}
               currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
             />
           </Route>
-          <Route exact path="/chat/user/:id">
-            <ChatPage currentUser={currentUser} users={users} signs={signs} />
+          <Route exact path="/connect/user/:id">
+            <ChatPage
+              setCurrentUser={setCurrentUser}
+              currentUser={currentUser}
+              users={users}
+              signs={signs}
+            />
           </Route>
         </Switch>
         <Footer />
