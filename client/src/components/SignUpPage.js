@@ -34,7 +34,7 @@ const SignUpPage = ({
       password: formData.password,
       likedBy: [],
       likes: [],
-      recievedMessages: [],
+      messageThreads: [],
       matches: [],
       dateOfBirth: formData.dateOfBirth,
       age: formData.age,

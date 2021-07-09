@@ -1,5 +1,5 @@
 //use twitterclone tweetinput
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Particles from "react-particles-js";
@@ -13,6 +13,7 @@ const ChatPage = ({ setCurrentUser, currentUser, users, signs }) => {
   const [msgs, setMsgs] = useState("");
   const [msgContent, setMsgContent] = useState("");
   const [newMsg, setNewMsg] = useState(false);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     fetch(`/users/${id}`).then((response) =>
@@ -24,6 +25,7 @@ const ChatPage = ({ setCurrentUser, currentUser, users, signs }) => {
             user.connectionWithId === currentUser._id
           );
         });
+
         setMsgs(filteredMsgs);
       })
     );
@@ -34,6 +36,7 @@ const ChatPage = ({ setCurrentUser, currentUser, users, signs }) => {
 
   const handleChat = (ev) => {
     ev.preventDefault();
+
     setNewMsg(true);
     console.log(msgContent);
 
@@ -49,9 +52,7 @@ const ChatPage = ({ setCurrentUser, currentUser, users, signs }) => {
       " @ " +
       currentdate.getHours() +
       ":" +
-      currentdate.getMinutes() +
-      ":" +
-      currentdate.getSeconds();
+      currentdate.getMinutes();
     msgData = {
       connectionWithId: currentPerson._id,
       myId: currentUser._id,
@@ -62,6 +63,8 @@ const ChatPage = ({ setCurrentUser, currentUser, users, signs }) => {
         message: msgContent,
       },
     };
+
+    setMsgContent("");
 
     fetch("/users/messages/update", {
       method: "PATCH",
